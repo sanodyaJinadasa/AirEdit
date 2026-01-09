@@ -1,8 +1,11 @@
 import cv2
 from hand_tracker import HandTracker
-from gestures import is_drag, is_resize, is_fist
+from gestures import is_drag, is_resize, is_fist, is_pinch
 from image_manager import ImageManager
 from undo_manager import UndoManager
+
+dragging = False
+active_image = 0
 
 cap = cv2.VideoCapture(0)
 cap.set(3, 1280)
@@ -18,19 +21,35 @@ images.load_image("assets/image2.png", 500, 300)
 while True:
     ret, frame = cap.read()
     frame = cv2.flip(frame, 1)
+    
 
     landmarks = hand.get_landmarks(frame)
 
     if landmarks:
-        if is_drag(landmarks):
-            undo.save(images.images)
-            images.images[0]["x"] = landmarks[8][0]
-            images.images[0]["y"] = landmarks[8][1]
+        # if is_drag(landmarks):
+        #     undo.save(images.images)
+        #     images.images[0]["x"] = landmarks[8][0]
+        #     images.images[0]["y"] = landmarks[8][1]
+
+    
+        index_x, index_y = landmarks[8]
+        if is_pinch(landmarks):
+            if not dragging:
+                undo.save(images.images)   # save ONCE
+                dragging = True
+
+            images.images[active_image]["x"] = index_x - 50
+            images.images[active_image]["y"] = index_y - 50
+
+        else:
+            dragging = False
+
 
         if is_fist(landmarks):
             prev = undo.undo()
             if prev:
                 images.images = prev
+
 
     # for img_data in images.images:
     #     x, y = img_data["x"], img_data["y"]
