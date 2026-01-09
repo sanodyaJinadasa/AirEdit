@@ -16,3 +16,4 @@ class HandTracker:
             landmarks = [(int(l.x * frame.shape[1]), int(l.y * frame.shape[0])) for l in hand.landmark]
             return landmarks
         return None
+
