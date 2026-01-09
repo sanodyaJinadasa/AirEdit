@@ -32,9 +32,27 @@ while True:
             if prev:
                 images.images = prev
 
+    # for img_data in images.images:
+    #     x, y = img_data["x"], img_data["y"]
+    #     frame[y:y+100, x:x+100] = img_data["img"][:100, :100]
+
     for img_data in images.images:
-        x, y = img_data["x"], img_data["y"]
-        frame[y:y+100, x:x+100] = img_data["img"][:100, :100]
+        img = img_data["img"]
+        if img is not None:
+            x, y = img_data["x"], img_data["y"]
+            h, w = 100, 100 
+            
+            roi = frame[y:y+h, x:x+w]
+
+            if img.shape[2] == 4:
+                foreground = img[:h, :w, :3]
+                alpha_mask = img[:h, :w, 3] / 255.0
+                
+                for c in range(0, 3):
+                    frame[y:y+h, x:x+w, c] = (alpha_mask * foreground[:, :, c] +
+                                            (1 - alpha_mask) * roi[:, :, c])
+            else:
+                frame[y:y+h, x:x+w] = img[:h, :w]
 
     cv2.imshow("Gesture Image Editor", frame)
     if cv2.waitKey(1) & 0xFF == 27:
