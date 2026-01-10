@@ -62,7 +62,7 @@ while True:
             if prev:
                 images.images = prev
 
-    # ---------- DRAW IMAGES ----------
+    
     for img_data in images.images:
         img = img_data["img"]
         if img is not None:
