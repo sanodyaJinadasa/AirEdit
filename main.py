@@ -56,7 +56,6 @@ while True:
         else:
             dragging = False
 
-        # ---------- UNDO (FIST) ----------
         if is_fist(landmarks):
             prev = undo.undo()
             if prev:
