@@ -92,6 +92,6 @@ while True:
     if cv2.waitKey(1) & 0xFF == 27:
         break
 
-# -------------------- CLEANUP --------------------
+
 cap.release()
 cv2.destroyAllWindows()
