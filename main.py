@@ -4,7 +4,7 @@ from gestures import is_pinch, is_fist
 from image_manager import ImageManager
 from undo_manager import UndoManager
 
-# -------------------- STATE --------------------
+
 dragging = False
 active_image = 0  # currently active image
 
