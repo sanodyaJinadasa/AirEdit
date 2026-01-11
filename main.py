@@ -8,7 +8,7 @@ from undo_manager import UndoManager
 dragging = False
 active_image = 0  # currently active image
 
-# -------------------- CAMERA --------------------
+
 cap = cv2.VideoCapture(0)
 cap.set(3, 1280)
 cap.set(4, 720)
