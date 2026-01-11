@@ -22,7 +22,7 @@ undo = UndoManager()
 images.load_image("assets/image1.png", 200, 200)
 images.load_image("assets/image2.png", 500, 300)
 
-# -------------------- MAIN LOOP --------------------
+
 while True:
     ret, frame = cap.read()
     if not ret:
