@@ -18,7 +18,7 @@ hand = HandTracker()
 images = ImageManager()
 undo = UndoManager()
 
-# -------------------- LOAD IMAGES --------------------
+
 images.load_image("assets/image1.png", 200, 200)
 images.load_image("assets/image2.png", 500, 300)
 
