@@ -6,7 +6,7 @@ from undo_manager import UndoManager
 
 
 dragging = False
-active_image = 0  # currently active image
+active_image = 0
 
 
 cap = cv2.VideoCapture(0)
