@@ -36,7 +36,7 @@ while True:
         if landmarks:
             # Draw a circle on index finger tip 
             cv2.circle(frame, (landmarks[8][0], landmarks[8][1]), 10, (0, 255, 0), -1)
-            # Draw a circle on thumb tip (landmark 4)
+            # Draw a circle on thumb tip 
             cv2.circle(frame, (landmarks[4][0], landmarks[4][1]), 10, (0, 0, 255), -1)
 
 
