@@ -43,7 +43,7 @@ while True:
         # ---------- DRAG ----------
         if is_pinch(landmarks):
             if not dragging:
-                undo.save(images.images)  # save state once when pinch starts
+                undo.save(images.images)  # save state once when drag starts
                 dragging = True
 
             # BOUNDARY SAFE POSITION
