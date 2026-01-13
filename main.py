@@ -46,7 +46,7 @@ while True:
                 undo.save(images.images)  # save state once when drag starts
                 dragging = True
 
-            # boundary safe
+            # boundary safe posistion
             frame_h, frame_w = frame.shape[:2]
             x = max(0, min(index_x - 50, frame_w - 100))
             y = max(0, min(index_y - 50, frame_h - 100))
