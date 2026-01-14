@@ -40,7 +40,7 @@ while True:
             cv2.circle(frame, (landmarks[4][0], landmarks[4][1]), 10, (0, 0, 255), -1)
 
 
-        # ---------- DRAG ----------
+        # ----------  ----------
         if is_pinch(landmarks):
             if not dragging:
                 undo.save(images.images)  # save state once when drag starts
