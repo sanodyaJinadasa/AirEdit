@@ -87,7 +87,7 @@ while True:
 
     cv2.imshow("Gesture Image Editor", frame)
 
-    # ESC to exit
+    # esc to exit
     if cv2.waitKey(1) & 0xFF == 27:
         break
 
