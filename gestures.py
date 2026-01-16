@@ -1,7 +1,7 @@
 # from utils import distance
 
 # def is_drag(landmarks):
-#     return distance(landmarks[8], landmarks[4]) > 40
+
 
 
 
