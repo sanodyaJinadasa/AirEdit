@@ -1,5 +1,3 @@
-# from utils import distance
-
 
 
 
