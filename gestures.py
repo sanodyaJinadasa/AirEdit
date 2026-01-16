@@ -3,8 +3,6 @@
 # def is_drag(landmarks):
 #     return distance(landmarks[8], landmarks[4]) > 40
 
-# def is_resize(landmarks):
-#     return distance(landmarks[8], landmarks[4]) < 40
 
 
 
