@@ -3,8 +3,6 @@
 
 
 
-
-
 from utils import distance
 
 PINCH_THRESHOLD = 40
@@ -14,3 +12,5 @@ def is_pinch(landmarks):
 
 def is_fist(landmarks):
     return landmarks[8][1] > landmarks[6][1]
+
+
