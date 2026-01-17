@@ -1,7 +1,4 @@
 
-
-
-
 from utils import distance
 
 PINCH_THRESHOLD = 40
