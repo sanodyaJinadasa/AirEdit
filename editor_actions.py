@@ -13,4 +13,4 @@ def rotate_image(image, angle):
 
 
 
-# ssuip
+# ssuipo
