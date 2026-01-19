@@ -10,3 +10,7 @@ def resize_image(image, scale):
 
 def rotate_image(image, angle):
     image["angle"] += angle
+
+
+
+# ss
