@@ -17,4 +17,4 @@ def rotate_image(image, angle):
 #SSL4
 #22real
 #23s
-#ho
+#hop
