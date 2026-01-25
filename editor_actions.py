@@ -18,3 +18,4 @@ def rotate_image(image, angle):
 #22real
 #23s
 #hope25
+#s
