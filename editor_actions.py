@@ -19,4 +19,4 @@ def rotate_image(image, angle):
 #23s
 #hope25
 #sano
-#wqaeauwk
+#wqaeauwkjjk
