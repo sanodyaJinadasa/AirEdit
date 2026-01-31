@@ -13,7 +13,7 @@ def rotate_image(image, angle):
 
 
 
-# ssuipo5
+# ssuipo5cs
 #SSL4
 #22real
 #23swsefceclanet
