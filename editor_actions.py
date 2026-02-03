@@ -21,3 +21,4 @@ def rotate_image(image, angle):
 #sano
 #wqaeauwkjjk
 #6hourlast3
+#
