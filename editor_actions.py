@@ -22,4 +22,4 @@ def rotate_image(image, angle):
 #wqaeauwkjjk
 #6hourlast3
 #daynowlast26
-#independant
+#independantday
