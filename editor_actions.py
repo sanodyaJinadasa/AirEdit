@@ -24,4 +24,4 @@ def rotate_image(image, angle):
 #daynowlast26
 #independantday
 #onlymore2sub - yestbdmy
-#s
+#s2
