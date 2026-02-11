@@ -25,4 +25,4 @@ def rotate_image(image, angle):
 #independantday
 #onlymore2sub - yestbdmy
 #s2day-s1day
-#finish -ss
+#finish -ssd
