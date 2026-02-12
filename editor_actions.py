@@ -26,3 +26,4 @@ def rotate_image(image, angle):
 #onlymore2sub - yestbdmy
 #s2day-s1day
 #finish -ssds256
+#
