@@ -27,4 +27,4 @@ def rotate_image(image, angle):
 #s2day-s1day
 #finish -ssds256
 #tommorrowlast day 
-#all finish done &
+#all finish done & dusted
